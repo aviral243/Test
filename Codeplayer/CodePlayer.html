@@ -1,0 +1,45 @@
+<html>
+<head>
+
+	<title>CodePlayery</title>
+
+	<script type= "text/javascript" src="jQuery.min.js"></script>
+
+	<link type="text/css" rel="stylesheet" href = "CodePlayer.css">
+
+</head>
+
+<body>
+
+	<div id = "header">
+
+		<div id = "logo">
+
+			Code Player
+
+		</div>
+
+		<div id = "ButtonContainer">
+
+			<div class = "toggleButton active"  id = "html">HTML</div>
+			<div class = "toggleButton" id = "css">CSS</div>
+			<div class = "toggleButton" id = "javascript">JavaScript</div>
+			<div class = "toggleButton active" id = "output">Output</div>
+		</div>
+	</div>
+
+	<div id = "bodyContainer">
+
+		<textarea id = "htmlPanel" class = "panel"><p id ="para">Hello World!</p></textarea>
+
+		<textarea id = "cssPanel" class = "panel hidden">p{ color: green;}</textarea>
+
+		<textarea id = "javascriptPanel" class = "panel hidden">document.getElementById("para").innerHTML = "Hi Aviral!";</textarea>
+
+		<iframe id = "outputPanel" class = "panel"></iframe>
+
+		<script src = "CodePlayer.js"></script>
+
+</body>
+
+</html>
